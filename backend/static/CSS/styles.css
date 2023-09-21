@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap');
+
+@media screen and (max-width: 1600px) {
+    .video-container{
+        flex-basis: 300px;
+        min-height: 200px;
+    }
+}
+
+
+:root{
+    --shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    background-color: white !important;
+    /* overflow-y: hidden; */
+}
+
+.navbar {
+    background-color: rgb(191, 232, 232) !important;
+}
+
+.welcome-message {
+    font-size: 38px;
+}
+
+#logo{
+    display: block;
+    width: 50% ;
+    margin: -18% auto -5% auto;
+    mix-blend-mode: darken;
+}
+
+.form-container{
+    box-shadow: var(--shadow);
+    height: 87%;
+    width: 53%;
+    text-align: center;
+    background-color: rgb(217, 249, 249);
+    padding: 5%;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    overflow-y: hidden;
+}
+
+#form input[type="submit"]{
+    background-color: black;
+    border-radius: 5px;
+}
+
+/*-----------ROOM STYLING-------------*/
+
+#room-name-wrapper{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    max-width: 90%;
+}
+
+.room-name{
+    position: relative;
+    left: 10px;
+}
+
+.Username-wrapper{
+    position: absolute;
+    /* left: 16.2%; */
+    background: rgba(0, 0, 0,0.1);
+    color: white;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 9999;
+}
+
+
+#video-streams{
+    display: flex;
+    flex-wrap: wrap;
+    height: 83vh;
+    width : 70%;
+    margin: 0 auto;
+}
+
+.video-container{
+    flex: 1 0 70vh;
+    max-height: 100%;
+    min-height:30%;
+    border: 1px solid rgb(75, 95, 172);
+    border-radius: 5px;
+    margin: 5px;
+    background-color:rgba(198, 202, 219, 1);
+}
+
+.video-player{
+    height: 99.92%;
+    width: 100%;
+}
+
+.video-player > *{
+    border-radius: 5px;
+}
+
+#controls-wrapper{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    column-gap: 2rem;
+    position: sticky;
+    left: 39%;
+    bottom: 4%;
+}
+
+
+.controls-button{
+    height: 9vh;
+    width: 9vh;
+    margin: auto;
+    padding: 2vh;   
+    background-color: white;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    border-radius: 5%;
+    
+}
+
+#leave-btn:hover{
+    background-color: rgba(255, 80, 80, 1);
+}
